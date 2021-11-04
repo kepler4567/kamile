@@ -59,12 +59,12 @@
 <div>
     <input type="number" id="Foto">
     <button class="Botao" type="submit" onclick="TrocarIMG()">Ver foto</button>
-    <button style="width: 150px;" class="Botao" type="submit"> <a href="./kamile.html">Página inicial</a></button>
+    <button style="width: 150px;" class="Botao" type="submit"> <a href="http://localhost:3000/">Página inicial</a></button>
 </div>
 
 
 <div style="margin-top: 20px;">
-    <img id="URL" src="../kamile/k&k/Foto1.jpg">
+    <img id="URL" src="http://localhost:3000/fotos/Foto1.jpg">
 </div>
 
 
@@ -83,7 +83,8 @@
             document.getElementById('Falha').innerHTML = "Digite um valor entre 1 e 59 "
             document.getElementById('Falha').style.display = 'block'
         }
-        var Caminho = `../kamile/k&k/Foto${valor}.jpg`
+        http://localhost:3000/fotos/Foto1.jpg
+        var Caminho = `http://localhost:3000/fotos/Foto${valor}.jpg`
         document.getElementById('URL').setAttribute('src', Caminho)
 
     }
