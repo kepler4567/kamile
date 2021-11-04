@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+    <style>
+    #Titulo {
+
+        font-size: 50px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: rgb(48, 2, 90);
+
+    }
+    .Botao {
+
+            background: #0066A2;
+
+            color: white;
+
+            border-style: outset;
+
+            border-color: #0066A2;
+
+            height: 50px;
+
+            width: 100px;
+
+            font: bold 15px arial, sans-serif;
+
+            text-shadow:none;
+
+            border-radius: 10px;
+
+    }
+    body {
+        
+        background-size: cover;
+        background-image: url('https://img.freepik.com/vetores-gratis/linda-flor-desabrochando-com-folhas-rosa_41066-1428.jpg?size=626&ext=jpg&ga=GA1.2.1518270500.1633564800');
+        text-align: center;
+    }
+    input {
+        height: 30px;
+    }
+    label {
+        font-size: 25px;
+    }
+    img {
+        height: 500px;
+    }
+</style>
+
+</head>
+<body>
+<h1 id="Titulo">Nossos momentos </h1>
+
+<div>
+    <input type="number" id="Foto">
+    <button class="Botao" type="submit" onclick="TrocarIMG()">Ver foto</button>
+    <button style="width: 150px;" class="Botao" type="submit"> <a href="./kamile.html">Página inicial</a></button>
+</div>
+
+
+<div style="margin-top: 20px;">
+    <img id="URL" src="../kamile/k&k/Foto1.jpg">
+</div>
+
+
+<div>
+    <h2 id="Falha"></h2>
+</div>
+
+
+
+<script>
+    function TrocarIMG() {
+        document.getElementById('Falha').style.display = 'none'
+        var valor = document.getElementById("Foto").value
+        if (valor <= 0 || valor >= 60) {
+
+            document.getElementById('Falha').innerHTML = "Digite um valor entre 1 e 59 "
+            document.getElementById('Falha').style.display = 'block'
+        }
+        var Caminho = `../kamile/k&k/Foto${valor}.jpg`
+        document.getElementById('URL').setAttribute('src', Caminho)
+
+    }
+
+</script>
+
+</body>
+</html>

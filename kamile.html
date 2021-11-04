@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motivos pelo qual eu te amo</title>
+    <style>
+
+        #Titulo {
+
+            font-size: 50px;
+            margin-top: 30px;
+            margin-bottom: 70px;
+            color: rgb(48, 2, 90);
+
+        }
+        .Botao {
+
+                background: #0066A2;
+
+                color: white;
+
+                border-style: outset;
+
+                border-color: #0066A2;
+
+                height: 50px;
+
+                width: 100px;
+
+                font: bold 15px arial, sans-serif;
+
+                text-shadow:none;
+
+                border-radius: 10px;
+
+        }
+        body {
+            
+            background-size: cover;
+            background-image: url('https://img.freepik.com/vetores-gratis/linda-flor-desabrochando-com-folhas-rosa_41066-1428.jpg?size=626&ext=jpg&ga=GA1.2.1518270500.1633564800');
+            text-align: center;
+        }
+        #Motivos {
+
+            text-align: center;
+            font-size: 70px;
+            margin-top: 10%;
+            color: rgb(108, 38, 173);
+            -webkit-text-stroke-width: 3px; /* largura da borda */
+            -webkit-text-stroke-color: rgb(41, 11, 70); /* cor da borda */
+        }
+        input {
+            height: 30px;
+        }
+        label {
+            font-size: 25px;
+        }
+        #Carta {
+
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+        }
+    </style>
+
+</head>
+<body>
+    <h1 id="Titulo"> 100 motivos para te amar</h1>
+    <label>Escolha um número de 0 a 99: </label>
+    <input type="number" name="motivo" id="motivo">
+    <button class="Botao" type="submit" onclick="BuscarMotivo()">Motivos</button>
+    <button class="Botao" type="submit" onclick="LerCarta()">Ler carta</button>
+    <button class="Botao" type="submit"> <a href="./Fotos.html"> Ver fotos</a></button>
+    
+    <h1 id="Motivos"></h1>
+    <p id="Carta">
+        Olá meu amor, por mais que as coisas estejam difíceis ultimamente, para nós dois, me deito e lembro que tenho seu apoio 
+        para o que der e vier, isso sempre me acalma por mais que as coisas estejam difíceis, é quero que você também se lembre disso 
+        todos os dias, que por mais que tudo esteja difícil, mesmo que tudo e todos se virem contra você, eu sempre estarei ao seu lado,
+        por que você é meu amor, minha vida, meu sentido e meu tudo. Não saberia mais como viver sem você, imagino que você também se sinta assim,
+        por isso, vamos fazer um juramento que nunca jamais vamos um ficar sem o outro, que um sempre vai apoiar o outro, ser o melhor amigo e um parceiro,
+        que sempre um estará ao lado do outro quando tudo estiver ruim, em fim, feliz aniversário de 16 aninhos, sempre seja essa pessoa gentil e bondosa que você é,
+        e sempre se lembre que tudo você pode contar comigo, te amo muito meu amor.
+
+
+
+
+    </p>
+   
+
+    <script>
+        document.getElementById('Carta').style.display = "none"
+
+        function BuscarMotivo() {
+
+            var input = document.getElementById("motivo").value
+            var Motivos = document.getElementById('Motivos')
+            Motivos.style.display = "Block"
+            document.getElementById('Carta').style.display = 'none'
+            
+
+            if (input < 0 || input > 99)
+            {
+                Motivos.innerHTML = "Escolha um número de 0 a 99"
+            }
+            if (input == 0) {
+                Motivos.innerHTML = "Te amo por que você me faz rir"
+            }
+            if (input == 1) {
+                Motivos.innerHTML = "Te amo por que você é meu descanso"
+            } 
+            if (input == 2) {
+                Motivos.innerHTML = "Te amo por que você é o amor da minha vida"
+            } 
+            if (input == 3) {
+                Motivos.innerHTML = "Te amo por que você me faz feliz"
+            } 
+            if (input == 4) {
+                Motivos.innerHTML = "Te amo por que você é especial para mim"
+            } 
+            if (input == 5) {
+                Motivos.innerHTML = "Te amo por que você me faz esquecer meus problemas"
+            } 
+            if (input == 6) {
+                Motivos.innerHTML = "Amo seu corpinho"
+            } 
+            if (input == 7) {
+                Motivos.innerHTML = "Você é esperta"
+            } 
+            if (input == 8) {
+                Motivos.innerHTML = "Te amo por que pensamos da mesma forma"
+            } 
+            if (input == 9) {
+                Motivos.innerHTML = "Você me faz sentir especial"
+            } 
+            if (input == 10) {
+                Motivos.innerHTML = "Amo seus beijos"
+            } 
+            if (input == 11) {
+                Motivos.innerHTML = "Você é meu sentido"
+            } 
+            if (input == 12) {
+                Motivos.innerHTML = "Te amo por que você é gostosa"
+            } 
+            if (input == 13) {
+                Motivos.innerHTML = "Ter amo pois somos compatíveis"
+            } 
+            if (input == 14) {
+                Motivos.innerHTML = "Te amo pois você me completa"
+            } 
+            if (input == 15) {
+                Motivos.innerHTML = "Te amo por que superamos tudo"
+            } 
+            if (input == 16) {
+                Motivos.innerHTML = "Você me alegra"
+            } 
+            if (input == 17) {
+                Motivos.innerHTML = "Te amo por que combinamos"
+            } 
+            if (input == 18) {
+                Motivos.innerHTML = "Amo seu sorriso"
+            } 
+            if (input == 19) {
+                Motivos.innerHTML = "Te amo por que você me completa"
+            } 
+            if (input == 20) {
+                Motivos.innerHTML = "Te amo por que temos uma conexão"
+            } 
+            if (input == 21) {
+                Motivos.innerHTML = "Te amo por que você é meu viver"
+            } 
+            if (input == 22) {
+                Motivos.innerHTML = "Amo sua comida"
+            } 
+            if (input == 23) {
+                Motivos.innerHTML = "Te amo por que temos objetivos"
+            } 
+            if (input == 24) {
+                Motivos.innerHTML = "Te amo por que você me faz ter mais ânimo"
+            } 
+            if (input == 25) {
+                Motivos.innerHTML = "Amo suas gracinhas"
+            } 
+            if (input == 26) {
+                Motivos.innerHTML = "Te amo por que vocẽ me da esperança"
+            } 
+            if (input == 27) {
+                Motivos.innerHTML = "Te amo por que você pensa no nosso futuro"
+            } 
+            if (input == 28) {
+                Motivos.innerHTML = "Você é por quem me apaixonei"
+            } 
+            if (input == 29) {
+                Motivos.innerHTML = "Te amo por que você me apoia"
+            } 
+            if (input == 30) {
+                Motivos.innerHTML = "Nos apaixonamos no primeiro dia"
+            } 
+            if (input == 31) {
+                Motivos.innerHTML = "Te amo por que temos um futuro juntos"
+            } 
+            if (input == 32) {
+                Motivos.innerHTML = "Você é minha safadinha"
+            } 
+            if (input == 33) {
+                Motivos.innerHTML = "Amo seus doces"
+            } 
+            if (input == 34) {
+                Motivos.innerHTML = "Você me acalma"
+            } 
+            if (input == 35) {
+                Motivos.innerHTML = "Te amo por que você faz comida para mim"
+            } 
+            if (input == 36) {
+                Motivos.innerHTML = "Te amo por que você é minha vida"
+            } 
+            if (input == 37) {
+                Motivos.innerHTML = "Te amo por que te amo"
+            } 
+            if (input == 38) {
+                Motivos.innerHTML = "Te amo por que você me faz bem"
+            } 
+            if (input == 39) {
+                Motivos.innerHTML = "Te amo por que você me suporta"
+            } 
+            if (input == 40) {
+                Motivos.innerHTML = "Amo suas gracinhas"
+            } 
+            if (input == 40) {
+                Motivos.innerHTML = "Te amo por que você me deixa doido"
+            }
+            if (input == 41) {
+                Motivos.innerHTML = "Você me faz sonhar"
+            } 
+            if (input == 42) {
+                Motivos.innerHTML = "Amo sua cara de bunda"
+            } 
+            if (input == 43) {
+                Motivos.innerHTML = "Te amo por que você é carinhosa"
+            } 
+            if (input == 44) {
+                Motivos.innerHTML = "Te amo por que você me ama"
+            } 
+            if (input == 45) {
+                Motivos.innerHTML = "Te amo por que você tras paz"
+            } 
+            if (input == 46) {
+                Motivos.innerHTML = "Você é minha gostosona"
+            } 
+            if (input == 47) {
+                Motivos.innerHTML = "Te amo por que você me faz sentir especial"
+            } 
+            if (input == 48) {
+                Motivos.innerHTML = "Te amo por que você divide tudo comigo"
+            } 
+            if (input == 49) {
+                Motivos.innerHTML = "Amo quando você esta safada"
+            } 
+            if (input == 50) {
+                Motivos.innerHTML ="Te amo por que você me faz ser uma pessoa melhor"
+            } 
+            if (input == 51) {
+                Motivos.innerHTML = "Amo suas caretas"
+            } 
+            if (input == 52) {
+                Motivos.innerHTML ="Te amo por que você vai na academia comigo( Bem as vezes)"
+            } 
+            if (input == 53) {
+                Motivos.innerHTML = "Amo o seu colinho"
+            } 
+            if (input == 54) {
+                Motivos.innerHTML = "Amo suas brincadeiras"
+            } 
+            if (input == 55) {
+                Motivos.innerHTML = "Amo nossas bricadeiras"
+            } 
+            if (input == 56) {
+                Motivos.innerHTML = "Te amo por que você tira seus finais de semana pra me aguentar"
+            } 
+            if (input == 57) {
+                Motivos.innerHTML = "Te amo pois nossos momentos são únicos"
+            } 
+            if (input == 58) {
+                Motivos.innerHTML = "Amo suas gracinhas"
+            } 
+            if (input == 59) {
+                Motivos.innerHTML = "Te amo por que você me da um sentido na vida"
+            } 
+            if (input == 60) {
+                Motivos.innerHTML = "Te amo por que te amar é bom"
+            } 
+            if (input == 61) {
+                Motivos.innerHTML = "Você é minha gatinha"
+            } 
+            if (input == 62) {
+                Motivos.innerHTML = "Amo o seu olhar"
+            } 
+            if (input == 63) {
+                Motivos.innerHTML = "Te amo por que você não desiste de mim"
+            } 
+            if (input == 64) {
+                Motivos.innerHTML = "Te amo por que confio em você"
+            } 
+            if (input == 65) {
+                Motivos.innerHTML = "Te amo por que amo te amo"
+            } 
+            if (input == 66) {
+                Motivos.innerHTML = "Você é meu bebezinho"
+            } 
+            if (input == 67) {
+                Motivos.innerHTML = "Te amo por que você me descansa"
+            } 
+            if (input == 68) {
+                Motivos.innerHTML = "Amo sua família"
+            } 
+            if (input == 69) {
+                Motivos.innerHTML = "Amo te ver quando acorda"
+            } 
+            if (input == 70) {
+                Motivos.innerHTML = "Te amo por que você me faz ser mais confiante"
+            }
+            if (input == 71) {
+                Motivos.innerHTML = "Te amo pois você visita outras comuns comigo"
+            } 
+            if (input == 72) {
+                Motivos.innerHTML = "Amo o seu toque"
+            } 
+            if (input == 73) {
+                Motivos.innerHTML = "Te amo por que você é o meu lar"
+            } 
+            if (input == 74) {
+                Motivos.innerHTML = "Te amo por que você é fofa"
+            } 
+            if (input == 75) {
+                Motivos.innerHTML = "você me deixa esperançoso"
+            } 
+            if (input == 76) {
+                Motivos.innerHTML = "Te amo pois nós somos nós mesmos com o outro"
+            } 
+            if (input == 77) {
+                Motivos.innerHTML = "Te amo por que você não tem medo de andar de moto comigo"
+            } 
+            if (input == 78) {
+                Motivos.innerHTML = "Te amo por que fazemos tudo juntos"
+            } 
+            if (input == 79) {
+                Motivos.innerHTML = "Te amo por que você especial para mim"
+            } 
+            if (input == 80) {
+                Motivos.innerHTML = "Te amo por que você me trás segurança"
+            }
+            if (input == 81) {
+                Motivos.innerHTML = "Te amo por que evoluimos juntos"
+            } 
+            if (input == 82) {
+                Motivos.innerHTML = "Amo a forma em que você olha para mim"
+            } 
+            if (input == 83) {
+                Motivos.innerHTML = "Te amo por que você confia em mim"
+            } 
+            if (input == 84) {
+                Motivos.innerHTML = "Te amo por que você ajuda as pessoas"
+            } 
+            if (input == 85) {
+                Motivos.innerHTML = "Te amo por que você gosta de andar de bike comigo"
+            } 
+            if (input == 86) {
+                Motivos.innerHTML = "Te amo por que você é mágica"
+            } 
+            if (input == 87) {
+                Motivos.innerHTML = "Amo te ver de pijama"
+            } 
+            if (input == 88) {
+                Motivos.innerHTML = "Te amo por que servimos a Deus juntos"
+            } 
+            if (input == 89) {
+                Motivos.innerHTML = "Te amo pois você vai na igreja comigo"
+            } 
+            if (input == 90) {
+                Motivos.innerHTML = "Amo nossos momentos juntos"
+            }
+            if (input == 91) {
+                Motivos.innerHTML ="Amo o seu carinho"
+            } 
+            if (input == 92) {
+                Motivos.innerHTML = "Te amo por que não escondemos nada um do outro"
+            } 
+            if (input == 93) {
+                Motivos.innerHTML =  "Amo como você me trata(As vezes)"
+            } 
+            if (input == 94) {
+                Motivos.innerHTML =  "Te amo por que você me faz chorar"
+            } 
+            if (input == 95) {
+                Motivos.innerHTML =  "Amo seu toque"
+            } 
+            if (input == 96) {
+                Motivos.innerHTML = "Te amo por que você me recarrega"
+            } 
+            if (input == 97) {
+                Motivos.innerHTML =  "Amo seu abraço"
+            } 
+            if (input == 89) {
+                Motivos.innerHTML =  "Te amo por que você confia em mim"
+            } 
+            if (input == 99) {
+                Motivos.innerHTML = "Você é o amor da minha vida"
+            } 
+
+            
+            
+
+        }
+        
+        function LerCarta() {
+            var carta = document.getElementById('Carta')
+            carta.style.display = "block"
+            document.getElementById('Motivos').style.display="none"
+          
+            
+        }
+    </script>
+
+</body>
+</html>
