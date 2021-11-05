@@ -15,8 +15,10 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "gatsby": "^4.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
-  }
+  },
+  "repository": "https://github.com/kepler4567/kamile.git"
 }
