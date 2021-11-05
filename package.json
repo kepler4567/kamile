@@ -1,14 +1,16 @@
 {
   "name": "kamile",
+  "build": "npm build",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "kepler4567 <kepler.batista456@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "repository": "https://github.com/kepler4567/kamile.git"
 }
